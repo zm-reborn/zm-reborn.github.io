@@ -1,0 +1,136 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #190707;
+}
+
+.zmr-cont-pic {
+	position: relative;
+	/*
+		HACK: stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
+		
+		To fix the color overlay not working.
+		
+		Holy fuck this pissed me off.
+	*/
+	height: 1px;
+	min-height: 450px;
+	width: 100%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.zmr-cont-pic-1 {
+	background-image: url('../img/bg001.jpg');
+	height: 100vh;
+}
+
+.zmr-cont-pic-2 {
+	background-image: url('../img/bg002.jpg');
+	height: 900px;
+}
+
+@media (max-width: 900px) {
+	.zmr-cont-pic-1 { height: 1000px; }
+}
+
+@media (max-width: 1200px) {
+	.zmr-cont-pic-2 { height: 1000px; }
+}
+
+.zmr-cont-pic-3 {
+	background-image: url('../img/bg003.jpg');
+}
+
+.zmr-cont-pic-color {
+	background: #190707DD;
+	height: 100%;
+}
+
+.zmr-cont-pic-inner {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.zmr-linkicon {
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	outline: solid 10px #00000000;
+	outline-offset: -10px;
+	
+	transition: 0.3s;
+	opacity: 0.3;
+	
+	
+	width: 70px;
+}
+
+.zmr-linkicon:hover {
+	opacity: 0.6;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.container-fluid p,h1 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container-fluid p {
+	max-width: 1200px;
+}
+
+/*
+	Media
+*/
+.zmr-pics {
+	margin-top: 70px;
+}
+
+.zmr-enlarge-img {
+	width: 250px;
+	margin-bottom: 20px;
+}
+
+.zmr-cont-pic-2 iframe {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	border: 0;
+}
+
+/*
+	Modal
+*/
+.modal {
+	top: 100px;
+	padding-top: 100px;
+}
+
+.modal-dialog {
+	max-width: 720px;
+}
+
+.modal-content {
+	background-color: #00000000;
+	border: 0;
+}
+
+.zmr-modal {
+	transition: 0.3s;
+}
+
+.zmr-modal:hover {
+	opacity: 0.7;
+}
+
+
