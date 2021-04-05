@@ -4,6 +4,12 @@ body {
 	background-color: #190707;
 }
 
+.close {
+	color: #FF0000;
+	text-shadow: none;
+	margin-bottom: 2px;
+}
+
 .zmr-cont-pic {
 	position: relative;
 	/*
