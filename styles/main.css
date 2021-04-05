@@ -43,7 +43,7 @@ body {
 		height: 800px;
 	}
 	.zmr-cont-pic-1 .zmr-cont-pic-inner {
-		top: 0;
+		top: 2em;
 		left: 0;
 		transform: none;
 	}
